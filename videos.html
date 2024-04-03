@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>CAP 2.0 Videos</title>
+		<link href="pictures/logo.png" rel="icon" type="image/png"/>
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <link href="css/videos.css" rel="stylesheet" type="text/css" />
+    <meta name="viewport" content="width=device-width">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  </head>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q57TB7PW3Y"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-Q57TB7PW3Y');
+  </script>
+  <body>
+    <div id="nav">
+      <a id="nav-left">
+        <img src="pictures/logo.png" id="home-icon">
+        <h1 id="home-title">CAP 2.0</h1>
+        <div class="bar-container" onclick="openNav(this)">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+        </div>
+      </a>
+      <div id="nav-right">
+        <div>
+          <a href="/index.html">HOME</a>
+          <div class="underline"></div>
+        </div>
+        <div>
+          <a href="/videos.html">VIDEOS</a>
+          <div class="underline"></div>
+        </div>
+        <div>
+          <a href="/simulation.html">SIMULATION</a>
+          <div class="underline"></div>
+        </div>
+        <div>
+          <a href="/resources.html">RESOURCES</a>
+          <div class="underline"></div>
+        </div>
+        <div>
+          <a href="/contributors.html">CONTRIBUTORS</a>
+          <div class="underline"></div>
+        </div>
+      </div>
+    </div>
+
+    <div id="content">
+      <iframe id="topvideo" src="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <h1 class="fade-in-section" id="topvideo-title"></h1>
+      <h5 class="fade-in-section" id="topvideo-upload"></h5>
+      <p class="fade-in-section" id="topvideo-description"></p>
+      
+      <div id="other-videos">
+        <div class="flex-item">
+          <img src="pictures/episode1.jpg" onclick="changeVideo(1)">
+          <div class="overlay">
+            <h2>The Human Body vs. SARS-CoV-2</h2>
+            <h5>Episode 1</h5>
+            <a onclick="changeVideo(1)"><div class="button">Watch Now!</div></a>
+          </div>
+        </div>
+				<div class="flex-item">
+          <img src="pictures/episode2.jpg" onclick="changeVideo(2)">
+          <div class="overlay">
+            <h2>Understanding the Effects of COVID-19</h2>
+            <h5>Episode 2</h5>
+            <a onclick="changeVideo(2)"><div class="button">Watch Now!</div></a>
+          </div>
+        </div>
+        <div class="flex-item">
+          <img src="pictures/episode3.jpg" onclick="changeVideo(3)">
+          <div class="overlay">
+            <h2>Preventative Measures</h2>
+            <h5>Episode 3</h5>
+            <a onclick="changeVideo(3)"><div class="button">Watch Now!</div></a>
+          </div>
+        </div>
+        <div class="flex-item">
+          <img src="pictures/episode4.jpg" onclick="changeVideo(4)">
+          <div class="overlay">
+            <h2>Diagnostic Testing & Isolation Procedures</h2>
+            <h5>Episode 4</h5>
+            <a onclick="changeVideo(4)"><div class="button">Watch Now!</div></a>
+          </div>
+        </div>
+        <div class="flex-item">
+          <img src="pictures/episode5.jpg" onclick="changeVideo(5)">
+          <div class="overlay">
+            <h2>Emergency & Intensive Care Management</h2>
+            <h5>Episode 5</h5>
+            <a onclick="changeVideo(5)"><div class="button">Watch Now!</div></a>
+          </div>
+        </div>
+        <div class="flex-item">
+          <img src="pictures/episode6.jpg" onclick="changeVideo(6)">
+          <div class="overlay">
+            <h2>Vaccination & Herd Immunity</h2>
+            <h5>Episode 6</h5>
+            <a onclick="changeVideo(6)"><div class="button">Watch Now!</div></a>
+          </div>
+        </div>
+        <div class="flex-item">
+          <img src="pictures/episode7.jpg" onclick="changeVideo(7)">
+         	<div class="overlay">
+            <h2>Physical, Mental, & Financial Impacts</h2>
+            <h5>Episode 7</h5>
+            <a onclick="changeVideo(7)"><div class="button">Watch Now!</div></a>
+          </div>
+        </div>
+				<div class="flex-item">
+          <img src="pictures/episode8.jpg" onclick="changeVideo(8)">
+         	<div class="overlay">
+            <h2>Lessons Learned</h2>
+            <h5>Episode 8</h5>
+            <a onclick="changeVideo(8)"><div class="button">Watch Now!</div></a>
+          </div>
+        </div>
+      </div>
+
+			<div class="next-release fade-in-section">
+				<h2>Episode 8 was the final episode in our video series.</h2>
+				<h5>Stay safe and we look forward to seeing you next year!</h5>
+			</div>
+    </div>
+    
+    <div id="footer">
+      <div id="footer1">
+        <div>
+        <h1>Oxford Academy</h1>
+        <h2>Anaheim Union High School District</h2>
+        </div>
+        <div class="oainfo">
+					<a href="https://www.instagram.com/oa_patriots/"><p>Instagram (@oa_patriots)</p></a>
+					<a href="http://oxford.auhsd.us/"><p>School Website (oxford.auhsd.us)</p></a>
+					<p>Email Us: info@oacap.ml</p>
+        </div>
+      </div>
+      <div id="club-footer">
+        <div id="footer2" class="footer-club">
+          <a href="/contributors.html"><h3>HOSA</h3></a>
+          <p><a href="https://www.instagram.com/oahosa/">Instagram (@oahosa)</a></p>
+          <p><a href="https://sites.google.com/view/oxfordacademyclubs/clubs/hosa?authuser=0">Club Website</a></p>
+          <p><a href="https://www.oa-hosa.org/">Oxford Academy HOSA</a></p>
+        </div>
+        <div id="footer3" class="footer-club">
+          <a href="/contributors.html"><h3>HGA</h3></a>
+          <p><a href="https://www.instagram.com/oa_hga/">Instagram (@oa_hga)</a></p>
+          <p><a href="https://sites.google.com/view/oxfordacademyclubs/clubs/health-guardians-of-america?authuser=0">Club Website</a></p>
+        </div>
+        <div id="footer4" class="footer-club">
+          <a href="/contributors.html"><h3>ACS</h3></a>
+          <p><a href="https://www.instagram.com/oaacs/">Instagram (@oaacs)</a></p>
+          <p><a href="https://sites.google.com/view/oxfordacademyclubs/clubs/american-cancer-society?authuser=0">Club Website</a></p>
+        </div>
+        <div id="footer4" class="footer-club">
+          <a href="/contributors.html"><h3>NAMI</h3></a>
+          <p><a href="https://www.instagram.com/oa.nami/">Instagram (@oa.nami)</a></p>
+          <p><a href="https://sites.google.com/view/oxfordacademyclubs/clubs/new-nami?authuser=0">Club Website</a></p>
+        </div>
+      </div>
+    </div>
+    <script src="js/script.js"></script>
+    <script src="js/videos.js"></script>
+  </body>
+</html>

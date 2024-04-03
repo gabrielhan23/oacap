@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>CAP 2.0 Simulation</title>
+		<link href="pictures/logo.png" rel="icon" type="image/png"/>
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <link href="css/simulation.css" rel="stylesheet" type="text/css"/>
+    <script src="js/phaser.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+  </head>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q57TB7PW3Y"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-Q57TB7PW3Y');
+  </script>
+  <body onload="setS()" onresize="checkSizeChange()">
+    <div id="nav">
+      <a id="nav-left">
+        <img src="pictures/logo.png" id="home-icon">
+        <h1 id="home-title">CAP 2.0</h1>
+        <div class="bar-container" onclick="openNav(this)">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+        </div>
+      </a>
+      <div id="nav-right">
+        <div>
+          <a href="/index.html">HOME</a>
+          <div class="underline"></div>
+        </div>
+        <div>
+          <a href="/videos.html">VIDEOS</a>
+          <div class="underline"></div>
+        </div>
+        <div>
+          <a href="/simulation.html">SIMULATION</a>
+          <div class="underline"></div>
+        </div>
+        <div>
+          <a href="/resources.html">RESOURCES</a>
+          <div class="underline"></div>
+        </div>
+        <div>
+          <a href="/contributors.html">CONTRIBUTORS</a>
+          <div class="underline"></div>
+        </div>
+      </div>
+    </div>
+
+    <div id="content">
+      <div id="pretext">
+        <img class="fade-in-section" src="pictures/backgroundgraph.png" id="background-graph">
+        <div class="z-higher">
+					<h1>Welcome</h1>
+          <p>CAP 2.0 Simulation</p>
+					<img src="pictures/simulationintro.png" id="phone-pretext-pic">
+          <div id="pretext-button">Scroll to Learn More</div>
+        </div>
+        <div class="z-higher">
+          <img src="pictures/simulationintro.png"  id="computer-pretext-pic">
+        </div>
+      </div>
+      <div id="woosh-container">
+        <div id="woosh-content">
+          <img src="pictures/bottomleftcorner.png" id="bottomleft">
+          <img src="pictures/toprightcorner.png" id="topright">
+          <h1 id="woosh-title">Δ DELTA SIMULATION</h1>
+          <p class="woosh-body"><u>Simulating the "Change In" the COVID-19 Phases</u></p>
+          <p id="background-box">The Delta simulation aims to compare different preventative measures taken during the COVID-19 pandemic, in the United States. Through case-randomization we can effectively demonstrate how efficient each course of action is in flattening the curve of the number of cases. Scroll down to begin!</p>
+        </div>
+      </div>
+        <div id="bar-content">
+          <div id="graph-bar">
+            <canvas id="chart" class="main-chart-start"></canvas>
+            <canvas id="chart1" class="charts"></canvas>
+            <canvas id="chart3" class="charts"></canvas>
+            <canvas id="chart4" class="charts"></canvas>
+            <canvas id="chart2" class="charts"></canvas>
+          </div>
+          
+          <div id="info-bar">
+            <h1 class="simulation-title fade-in-section">How it Works</h1>
+						<p class="fade-in-section">At the start of each simulation, 1-2 individuals are infected. Take a look at how the illness spreads from person to person and how each additional layer of prevention decreases the number of cases in the same amount of time down below.</p>
+            <p class="fade-in-section">The graph you see in white on your screen demonstrates all four cases' compiled graphs of the increase in the number of cases (Without Preventative Measures, Social Distancing and Lockdown, Wearing Masks, and Vaccination), whereas there are corresponding simulation graphs of the number of cases for each simulation as you scroll.</p>
+			    	<p class="fade-in-section">Each colored circle in the simulation represents a single person and their "state" at that point in time. Individuals can either represent being healthy, sick, recovered, vaccinated, or deceased and their speeds, number of interactions, etc. all impact their chances of contracting COVID-19.</p>
+
+            <h1 class="simulation-title fade-in-section" id="first-section">Without Preventative Measures</h1>
+            <div class="simulation fade-in-section" id="game1"><div class="simulation-cover"></div></div>
+            <canvas class="phone-graph" id="chart1" class="charts"></canvas>
+            <div class="key-div fade-in-section">
+              <img src="pictures/key1.png">
+            </div>
+            <p class="fade-in-section">As demonstrated in this simulation, without any preventative measures, one or two COVID-19 infections can lead to the majority of a population contracting the virus. The number of cases increase exponentially and peak in a short amount of time. This renders the population without much control over their next course of action. Hence, it is important that all citizens take at least the bare-minimum precautionary measures to avoid such drastic transmission rates.</p>
+						<p class="fade-in-section">The current strain of SARS-CoV-2 has an average mortality rate of 1.7%, in the United States, according to a study by the John Hopkins Coronavirus Resource Center and has already been the reason of death for hundreds of thousands of people. This deadly virus cannot be defeated without a united population.</p>
+
+            <h1 id="second-section" class="simulation-title fade-in-section">Social Distancing and Lockdown</h1>
+            <div class="simulation fade-in-section" id="game3"><div class="simulation-cover"></div></div>
+						<div class="key-div fade-in-section">
+              <img src="pictures/key1.png">
+            </div>
+						<p class="fade-in-section">Next, there are less people moving and interacting with each other in this simulation, as demonstated by the slower speeds and fixed dot positions. Staying home and being in contact only with immediate family members can decrease peak amounts of cases and safeguard your loved ones. The graph is compressed and peaks later in the simulation.</p>
+						<p class="fade-in-section">It is recommended by the Center for Disease Control and Prevention that people isolate themselves for 14 days after inter-state travel and larger social gatherings, during a "quarantine" period. Being in a lockdown phase is when all non-essential gatherings and businesses are shut down to allow for even less chances of disease spread.</p>
+            
+            <h1 id="third-section"  class="simulation-title fade-in-section">Wearing Masks</h1>
+            <div class="simulation fade-in-section" id="game4"><div class="simulation-cover"></div></div>
+						<div class="key-div fade-in-section">
+              <img src="pictures/key1.png">
+            </div>
+            <p class="fade-in-section">Next, there are less people moving and interacting with each other in this simulation, as demonstated by the slower speeds and fixed dot positions. Staying home and being in contact only with immediate family members can decrease peak amounts of cases and safeguard your loved ones. The graph is once again compressed and peaks later in the simulation.</p>
+						<p class="fade-in-section">It is recommended by the Center for Disease Control and Prevention that people isolate themselves for 14 days after inter-state travel and larger social gatherings, during a "quarantine" period. Being in a lockdown phase is when all non-essential gatherings and businesses are shut down to allow for even less chances of disease spread.</p>
+
+            <h1 id="fourth-section"  class="simulation-title fade-in-section">Vaccination</h1>
+            <div class="simulation fade-in-section" id="game2"><div class="simulation-cover"></div></div>
+						<div class="key-div fade-in-section">
+              <img src="pictures/key1.png">
+            </div>
+            <p class="fade-in-section">Here, we can see people gaining immunity through vaccination. Although providing vaccines to every member of the population is unrealistic, herd immunity is a form of indirect protection that reduces the probability of infection due to more people in the community being immune. This significantly decreases the chance that the person you are interacting with is Coronavirus-susceptible.</p>
+						<p class="fade-in-section">As demonstrated in the graph, the curve is flattened much quicker and does not peak as high. This is the current stage of pandemic control the United States is in. The vaccination phase is split into multiple sub-phases that allow for prioritization of community members to get vaccinated. Healthcare workers and senior citizens are the most susceptible, so they are first in line for vaccines. In order to learn more about scheduling your first vaccine dose, visit our <a href="/resources.html">Resources</a> page.</p>
+
+						<h1 class="simulation-title fade-in-section">Conclusion</h1>
+            <p class="fade-in-section">Now, compare all the case graphs. Each simulation allows for better control over the increase in the number of cases during the COVID-19 pandemic. However, each of these dots represent living people and the loss of even one is not something to be taken lightly. We urge you to follow all Center for Disease Control and Prevention guidelines and join the CAP 2.0 team in doing our part to flatten the curve and keep our community safe. This fight can only be won with everyone's cooperation.</p>
+          </div>
+        </div>
+        <div id="bar-content-phone">
+          <div id="info-bar">
+            <h1 class="simulation-title fade-in-section">How it Works</h1>
+            <p class="fade-in-section">At the start of each simulation, 1-2 individuals are infected. Take a look at how the illness spreads from person to person and how each additional layer of prevention decreases the number of cases in the same amount of time down below.</p>
+            <p class="fade-in-section">The graph you see in white on your screen demonstrates all four cases' compiled graphs of the increase in the number of cases (Without Preventative Measures, Social Distancing and Lockdown, Wearing Masks, and Vaccination), whereas there are corresponding simulation graphs of the number of cases for each simulation as you scroll.</p>
+			    	<p class="fade-in-section">Each colored circle in the simulation represents a single person and their "state" at that point in time. Individuals can either represent being healthy, sick, recovered, vaccinated, or deceased and their speeds, number of interactions, etc. all impact their chances of contracting COVID-19.</p>
+
+            <h1 class="simulation-title fade-in-section" id="first-section-phone">Without Preventative Measures</h1>
+            <div class="simulation fade-in-section" id="game1phone"><div class="simulation-cover"></div></div>
+            <div class="key-div fade-in-section">
+              <img src="pictures/key1.png">
+            </div>
+            <canvas class="phone-graph" id="chart1phone" class="charts"></canvas>
+            <p class="fade-in-section">As demonstrated in this simulation, without any preventative measures, one or two COVID-19 infections can lead to the majority of a population contracting the virus. The number of cases increase exponentially and peak in a short amount of time. This renders the population without much control over their next course of action. Hence, it is important that all citizens take at least the bare-minimum precautionary measures to avoid such drastic transmission rates.</p>
+						<p class="fade-in-section">The current strain of SARS-CoV-2 has an average mortality rate of 1.7%, in the United States, according to a study by the John Hopkins Coronavirus Resource Center and has already been the reason of death for hundreds of thousands of people. This deadly virus cannot be defeated without a united population.</p>
+            <h1 id="second-section-phone" class="simulation-title fade-in-section">Social Distancing and Lockdown</h1>
+            <div class="simulation fade-in-section" id="game3phone"><div class="simulation-cover"></div></div>
+						<div class="key-div fade-in-section">
+              <img src="pictures/key1.png">
+            </div>
+            <canvas class="phone-graph" id="chart3phone" class="charts"></canvas>
+						<p class="fade-in-section">Next, there are less people moving and interacting with each other in this simulation, as demonstated by the slower speeds and fixed dot positions. Staying home and being in contact only with immediate family members can decrease peak amounts of cases and safeguard your loved ones. The graph is once again compressed and peaks later in the simulation.</p>
+						<p class="fade-in-section">It is recommended by the Center for Disease Control and Prevention that people isolate themselves for 14 days after inter-state travel and larger social gatherings, during a "quarantine" period. Being in a lockdown phase is when all non-essential gatherings and businesses are shut down to allow for even less chances of disease spread.</p>
+
+            <h1 id="third-section-phone"  class="simulation-title fade-in-section">Wearing Masks</h1>
+            <div class="simulation fade-in-section" id="game4phone"><div class="simulation-cover"></div></div>
+						<div class="key-div fade-in-section">
+              <img src="pictures/key1.png">
+            </div>
+            <canvas class="phone-graph" id="chart4phone" class="charts"></canvas>
+            <p class="fade-in-section">In this simulation, the people are moving at a slower rate and the infection rate is less, demonstrating that even if someone was to come in contact with an infected person, there is a slight chance that they will not contract COVID-19 due to the use of masks, gloves, and hand sanitizers. The graph takes more time to escalate and peaks at a much lower level.</p>
+						<p class="fade-in-section">The use of a mask can lower transmission rates by at least 70%. As shown in the graph, it takes longer for the number of cases to spike, further disproving recent claims about the ineffectiveness of facial coverings.</p>
+
+            <h1 id="fourth-section-phone"  class="simulation-title fade-in-section">Vaccination</h1>
+            <div class="simulation fade-in-section" id="game2phone"><div class="simulation-cover"></div></div>
+						<div class="key-div fade-in-section">
+              <img src="pictures/key1.png">
+            </div>
+            <canvas class="phone-graph" id="chart2phone" class="charts"></canvas>
+            <p class="fade-in-section">Here, we can see people gaining immunity through vaccination. Although providing vaccines to every member of the population is unrealistic, herd immunity is a form of indirect protection that reduces the probability of infection due to more people in the community being immune. This significantly decreases the chance that the person you are interacting with is Coronavirus-susceptible.</p>
+						<p class="fade-in-section">As demonstrated in the graph, the curve is flattened much quicker and does not peak as high. This is the current stage of pandemic control the United States is in. The vaccination phase is split into multiple sub-phases that allow for prioritization of community members to get vaccinated. Healthcare workers and senior citizens are the most susceptible, so they are first in line for vaccines. In order to learn more about scheduling your first vaccine dose, visit our <a href="/resources.html">Resources</a> page.</p>
+
+						<h1 class="simulation-title fade-in-section">Conclusion</h1>
+            <p class="fade-in-section">Now, compare all the case graphs. Each simulation allows for better control over the increase in the number of cases during the COVID-19 pandemic. However, each of these dots represent living people and the loss of even one is not something to be taken lightly. We urge you to follow all Center for Disease Control and Prevention guidelines and join the CAP 2.0 team in doing your part to flatten the curve and keep our community safe. This fight can only be won with everyone's cooperation.</p>
+          </div>
+        </div>
+      </div>
+			<div id="footer">
+      <div id="footer1">
+        <div>
+        <h1>Oxford Academy</h1>
+        <h2>Anaheim Union High School District</h2>
+        </div>
+        <div class="oainfo">
+					<a href="https://www.instagram.com/oa_patriots/"><p>Instagram (@oa_patriots)</p></a>
+					<a href="http://oxford.auhsd.us/"><p>School Website (oxford.auhsd.us)</p></a>
+					<p>Email Us: info@oacap.ml</p>
+        </div>
+      </div>
+      <div id="club-footer">
+        <div id="footer2" class="footer-club">
+          <a href="/contributors.html"><h3>HOSA</h3></a>
+          <p><a href="https://www.instagram.com/oahosa/">Instagram (@oahosa)</a></p>
+          <p><a href="https://sites.google.com/view/oxfordacademyclubs/clubs/hosa?authuser=0">Club Website</a></p>
+          <p><a href="https://www.oa-hosa.org/">Oxford Academy HOSA</a></p>
+        </div>
+        <div id="footer3" class="footer-club">
+          <a href="/contributors.html"><h3>HGA</h3></a>
+          <p><a href="https://www.instagram.com/oa_hga/">Instagram (@oa_hga)</a></p>
+          <p><a href="https://sites.google.com/view/oxfordacademyclubs/clubs/health-guardians-of-america?authuser=0">Club Website</a></p>
+        </div>
+        <div id="footer4" class="footer-club">
+          <a href="/contributors.html"><h3>ACS</h3></a>
+          <p><a href="https://www.instagram.com/oaacs/">Instagram (@oaacs)</a></p>
+          <p><a href="https://sites.google.com/view/oxfordacademyclubs/clubs/american-cancer-society?authuser=0">Club Website</a></p>
+        </div>
+        <div id="footer4" class="footer-club">
+          <a href="/contributors.html"><h3>NAMI</h3></a>
+          <p><a href="https://www.instagram.com/oa.nami/">Instagram (@oa.nami)</a></p>
+          <p><a href="https://sites.google.com/view/oxfordacademyclubs/clubs/new-nami?authuser=0">Club Website</a></p>
+        </div>
+      </div>
+    </div>
+        
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+    <script src="js/script.js"></script>
+    <script src="js/simulation.js"></script>
+    <script src="js/vaccine.js"></script>
+    <script src="js/socialDistance.js"></script>
+    <script src="js/masks.js"></script>
+  </body>
+</html>

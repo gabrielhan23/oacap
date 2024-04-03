@@ -1,0 +1,142 @@
+iframe{
+  width: 86vw;
+  height: min(80vh, 50vw);
+  margin: 10vh 7vw;
+  margin-bottom: 5vh;
+}
+body html{
+  max-width: 100vw;
+}
+#content h1{
+  margin: 0 7vw;
+  font-weight: bolder;
+  font-family: "Montserrat";
+  margin-bottom: 10px;
+}
+#content h5{
+  margin: 0 7vw;
+  font-style: italic;
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+.next-release h5{
+  margin-bottom: 50px !important;
+}
+#content p{
+  margin: 0 7vw;
+  font-size: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #999999;
+}
+#other-videos{
+  padding: 10vh 7vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.flex-item{
+  width: calc(43vw - 3vw);
+  margin-bottom: 5vh;
+  height: max(20vw, 200px);  
+  cursor: pointer;
+}
+#other-videos img{
+  width: 100%;
+  height: 20vw;
+  transition: 0.5s;
+  object-fit: cover;
+}
+.overlay{
+  position: relative;
+  top: -100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  opacity: 0;
+  transition: 0.5s;
+}
+#content h2{
+  margin-left: 7vw;
+}
+.overlay h2{
+  text-align: center;
+  margin: 0 !important;
+  color: white;
+  font-family: "Montserrat";
+  font-weight: bolder;
+  font-size: 2vw;
+  padding: 0 30px;
+}
+#other-videos div:hover > img{
+  filter: brightness(50%)
+}
+#other-videos div:hover > .overlay{
+  opacity: 100
+}
+.button{
+  padding: 3%;
+  background-color: #20423aff;
+  color: white;
+  text-align: center;
+  width: 15vw;
+  margin: 20px;
+  transition: 0.5s;
+  cursor: pointer;
+  font-size: 1.5vw;
+  border-radius: 35px;
+  margin-bottom: 0;
+}
+.button:hover{
+  background-color: #c2e2d1ff;
+  color: #20423aff;
+}
+#last{
+  margin-left: 23vw;
+}
+.overlay h5{
+  margin-top: 10px !important;
+  margin-bottom: 0 !important;
+	margin-left: 0 !important;
+	margin-right: 0 !important;
+  color: white;
+}
+@media only screen and (max-width: 725px) {
+  .flex-item{
+    width: 85vw;
+    height: auto;
+  }
+  #other-videos img{
+    height: 40vw;
+  }
+  #last{
+    margin-left: 0;
+  }
+  .overlay{
+    top: 0;
+    height: auto;
+    opacity: 100;
+  }
+  .overlay h2{
+    color: black;
+    font-size: 20px;
+
+  }
+  #other-videos div:hover > img{
+    filter: none;
+  }
+  .button{
+    display: none;
+  }
+  #content iframe{
+    margin-top: 5vh;
+  }
+  .overlay h5{
+    margin-top: 10px !important;
+    margin-bottom: 0 !important;
+    font-size: 15px !important;
+    color: black;
+  }
+}

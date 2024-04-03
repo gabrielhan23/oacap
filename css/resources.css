@@ -1,0 +1,131 @@
+#right-download{
+  width: 20vw;
+
+}
+#resource-top{
+  margin: 0 5vw;
+}
+
+#resource-top iframe{
+  width: 70vw;
+}
+#right-download img{
+  width: 100%;
+}
+iframe{
+  width: 100% !important;
+  height: 30vw;
+  min-height: 400px;
+  margin-top: 20px;
+}
+h2{
+  font-size: 1.5vw;
+}
+#resources{
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  align-items: center;
+}
+#resources-phone{
+  flex-direction: column;
+  width: 100vw;
+  align-items: center;
+  display: none;
+}
+.resource{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.reverse-img{
+  margin-left: 0 !important;
+  margin-right: calc(20vw - 50px);
+}
+.resource img{
+  width: 30vw;
+  margin: 30px 50px;
+  margin-left: calc(20vw - 50px);
+}
+.resource .flyer{
+  width: 30vw;
+  margin: 5vh 10%;
+  margin-bottom: 0
+}
+.resource div{
+  width: 40vw;
+  margin-right: 10vw;
+}
+.resource h3{
+  text-decoration: underline;
+  font-size: 30px;
+}
+li{
+  font-size: 20px;
+}
+.reverse{
+  margin-right: 0 !important;
+  width: auto !important;
+  max-width: 40vw;
+}
+#content h1{
+  text-align: center;
+  border-bottom: 4px solid #c2e2d1;
+  padding-top: 30px;
+  margin-top: 0;
+  font-weight: bold;
+  font-family: "Montserrat";
+  font-size: 35px;
+  width: 50vw;
+  margin: auto
+}
+#resources a {
+  color: black;
+}
+#resources a:hover {
+  color: #007c7a;
+}
+#big-pic{
+  width: 20vw;
+}
+#content p{
+  padding: 0 10vw;
+  text-align: center;
+}
+@media only screen and (max-width: 1000px) {
+  h2{
+    font-size: 13px;
+  }
+}
+@media only screen and (max-width: 725px) {
+  #content h1{
+    width: 80vw !important;
+    margin: 0  10vw !important;
+  }
+  .resource{
+    flex-direction: column;
+    width: 80vw;
+  }
+  .resource div{
+    width: 100%;
+  }
+  .reverse div{
+    width: 100% !important;
+  }
+  #resources-phone{
+    display: flex;
+  }
+  #resources{
+    display: none;
+  }
+  .resource img{
+    width: 80vw;
+    margin-left: 0vw;
+  }
+  #big-pic{
+    width: 80vw;
+  }
+  .resource .flyer{
+    width: 80vw;
+  }
+}

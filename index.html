@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>CAP 2.0 Home</title>
+		<link href="pictures/logo.png" rel="icon" type="image/png"/>
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <link href="css/index.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/phaser/3.52.0/phaser.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+  </head>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q57TB7PW3Y"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-Q57TB7PW3Y');
+  </script>
+    
+  <div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+    <span class="w3-button w3-xxlarge w3-black w3-padding-large w3-display-topright" title="Close Modal Image">×</span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+      <img id="img01" class="w3-image">
+      <p id="caption" class="w3-opacity w3-large"></p>
+    </div>
+  </div>
+  <img src="pictures/bottle.png" id="left-arrow">
+  <img src="pictures/syringe.png" id="right-arrow">
+  <body>
+    
+    <div id="nav">
+      <a id="nav-left">
+        <img src="pictures/logo.png" id="home-icon">
+        <h1 id="home-title">CAP 2.0</h1>
+        <div class="bar-container" onclick="openNav(this)">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+        </div>
+      </a>
+      <div id="nav-right">
+        <div>
+          <a href="/index.html">HOME</a>
+          <div class="underline"></div>
+        </div>
+        <div>
+          <a href="/videos.html">VIDEOS</a>
+          <div class="underline"></div>
+        </div>
+        <div>
+          <a href="/simulation.html">SIMULATION</a>
+          <div class="underline"></div>
+        </div>
+        <div>
+          <a href="/resources.html">RESOURCES</a>
+          <div class="underline"></div>
+        </div>
+        <div>
+          <a href="/contributors.html">CONTRIBUTORS</a>
+          <div class="underline"></div>
+        </div>
+      </div>
+    </div>
+    <div class="intro">
+      <h1 id="main-welcome">Oxford Academy <br>Coronavirus Awareness Project 2.0</h1>
+			<h1 id="main-subtitle" class="fade-in-section">In Collaboration with HOSA, HGA, ACS, & NAMI</h1>
+      <a onclick="SmoothVerticalScrolling(document.getElementById('content'), 1000, 'top')" class="scroll" id="scroll-down"></a>
+    </div>
+    <div id="content">
+      <div class="content-body fade-in-section" id="about">
+        <div>
+         	<h1>Our Story.</h1>
+          <img src="pictures/aboutus.png" id="iphone-about-pic">
+          <p>When the novel Coronavirus pandemic broke out last year, Oxford Academy HOSA launched the Coronavirus Awareness Project (CAP) and hosted a donation drive for hand sanitizer and tissue boxes to supply all our classrooms. This year, Oxford Academy HOSA, HGA, NAMI, and ACS have partnered to relaunch CAP.</p>
+          <p>CAP 2.0 serves to remind the general public of the importance of public health precautions, being empathetic to high-risk patients and frontline workers, and staying cognizant of others’ and their own mental health while dealing with possible stress and other difficult issues caused by the pandemic. Each small action we take is significant in flattening the curve and helping to keep our community safe.</p>
+          <a href="/contributors.html"><h2>See Contributors   <i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i>
+</h2></a>
+          <a href="/videos.html"><div class="button">Start Watching</div></a>
+        </div>
+        <img src="pictures/aboutus.png" id="computer-about-pic">
+      </div>
+      <div class="content-body fade-in-section" id="videos">
+        <h1>Our Video Series.</h1>
+        <div>
+          <iframe src="https://www.youtube.com/embed/9pjRgJFi93s" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen id="videos-pic"></iframe>
+          <div id="videos-content">
+            <h2>About CAP 2.0</h2>
+            <p> Through an 8-part video series of investigative journalism, CAP 2.0 serves to advocate for behaviors that prevent the spread of infection, combat COVID-fatigue, and encourage vaccination to eventually attain herd immunity.</p>
+            <h2>Trailer</h2>
+            <p>Watch a sneak preview of the CAP 2.0 videos to come! Click <a href="videos.html">here</a> to see the full list of videos.</p>
+          </div>
+        </div>
+      </div>
+      <div class="content-body fade-in-section" id="infographic">
+        <h1 id="infographic-title">Infographics</h1>
+        <div id="infographic-content">
+          <div id="infographic-content-div">
+            <h1>COVID-19 Information</h1>
+            <p>During the AUHSD Servathon  on 01/18/2021, CAP 2.0 was launched. Members from Oxford Academy HOSA-Future Health Professionals, Health Guardians of America, American Cancer Society, and National Alliance on Mental Illness convened to create infographics on a range of COVID-19 related issues.</p>
+            <a href="/resources.html"><div class="button">More Resources</div></a>
+          </div>
+          <div class="w3-hover-opacity">
+          <div id="carouselExampleIndicators" class="carousel slide pictures-carousel" data-bs-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"></li>
+                <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></li>
+
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="pictures/infographic1.png" id="infographics" onclick="onClick(this)">
+                </div>
+                <div class="carousel-item">
+                  <img src="pictures/infographic2.png" id="infographics" onclick="onClick(this)">
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </a>
+          </div>
+          </div>
+        </div>
+      </div>
+			<div class="content-body fade-in-section" id="simulation">
+        <h1>Δ Delta Simulation</h1>
+				<h2><b>Simulating the <u>Change In</u> COVID-19 Phases</b></h2>
+        <div>
+          <div id="simulation-content">
+            <img src="pictures/graph.png">
+            <p>The Delta simulation aims to compare different preventative measures taken during the COVID-19 pandemic, in the United States. Through case-randomization we can effectively demonstrate how efficient each course of action is in flattening the curve of the number of cases. Take a look at how the illness spreads from person to person and how each additional layer of prevention decreases the number of cases in the same amount of time, as well as what you can do to safeguard your loved ones and help us in this fight against COVID-19.</p>
+						<a href="/simulation.html"><div class="button">Check It Out</div></a>
+          </div>
+        </div>
+      </div>
+
+      <div id="footer">
+      </div>
+      <h5>Created by Oxford Academy HOSA, HGA, ACS, & NAMI</h5>
+    </div>
+    <script src="js/script.js"></script>
+    <script src="js/index.js"></script>
+  </body>
+</html>
